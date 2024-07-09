@@ -131,3 +131,32 @@ export const Icons = [
     subtitle: "Easy returns & exchanges within 90 days of your purchase.",
   },
 ];
+
+export const footerTexts = [
+  {
+    title: "Customer Care",
+    links: [
+      "Account",
+      "Contact Us",
+      "Shipping & Delivery",
+      "Returns & Exchange",
+      "Size Guide",
+      "Style Guide",
+    ],
+  },
+  {
+    title: "Information",
+    links: [
+      "Our Brand",
+      "Loyalty Rewards",
+      "Affiliate Program",
+      "FAQ",
+      "Blog",
+      "Privacy Policy",
+    ],
+  },
+  {
+    title: "Join the Hub",
+    links: "Join a community of stylistically Amazing people.",
+  },
+];

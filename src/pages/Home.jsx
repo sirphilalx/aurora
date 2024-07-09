@@ -1,6 +1,7 @@
 import Carousel from "../components/Carousel";
 import ComingSoon from "../components/ComingSoon";
 import Commerce from "../components/Commerce";
+import Features from "../components/Feature";
 import Hero from "../components/Hero";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <ComingSoon />
       <Commerce />
       <Carousel />
+      <Features />
     </>
   );
 };
