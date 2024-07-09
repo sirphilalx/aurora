@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import WishlistComponent from "../components/WishListComponent";
+import { useCart } from "../CartContext";
 
 const Navbar = () => {
+  const { cart } = useCart();
+
+  // Calculate the total number of items in the cart
+  const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
   return (
     <>
       <div className="hamburger flex bg-custom-blue p-6 items-center justify-between h-[75px] sm:h-[124px]">
@@ -89,6 +94,11 @@ const Navbar = () => {
                 strokeLinejoin="round"
               />
             </svg>
+            {totalItems > 0 && (
+              <span className="relative z-10 top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full transform translate-x-1/2 -translate-y-1/2">
+                {totalItems}
+              </span>
+            )}
           </Link>
         </div>
       </div>

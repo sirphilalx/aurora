@@ -31,7 +31,7 @@ const ProductDetail = () => {
   //   state to manage selection of size
   const [activeSize, setActiveSize] = useState(null);
 
-  const [quantity, setQuantity] = useState(0); // State to manage quantity
+  const [quantity, setQuantity] = useState(1); // State to manage quantity
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
