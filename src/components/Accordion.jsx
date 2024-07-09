@@ -13,7 +13,7 @@ const Accordion = ({ title, content }) => {
         className="w-full text-left p-4 flex justify-between items-center"
         onClick={toggleAccordion}
       >
-        <span className="font-thin">{title}</span>
+        <span className="font-bold">{title}</span>
         <span>{isOpen ? "-" : "+"}</span>
       </button>
       {isOpen && <div className="p-4 font-thin">{content}</div>}
