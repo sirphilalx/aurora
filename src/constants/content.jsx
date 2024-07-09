@@ -107,3 +107,27 @@ export const CarouselImages = [
   { title: "Wool", imgUrl: "./assets/products/carouselImage3.jpeg" },
   { title: "Leather", imgUrl: "./assets/products/carouselImage4.jpeg" },
 ];
+
+export const Icons = [
+  {
+    icon: "./assets/icons/deliveryVan.svg",
+    title: "Free Shipping",
+    subtitle: "Fast & free delivery on U.S. orders over $99.",
+  },
+  {
+    icon: "./assets/icons/globe.svg",
+    title: "Express International Delivery",
+    subtitle: "DHL 2-Day Express delivery available.",
+  },
+  {
+    icon: "./assets/icons/mail.svg",
+    title: "Contact Us",
+    subtitle:
+      "Chat with our concierge at any time. Email us at contact@aurora.com",
+  },
+  {
+    icon: "./assets/icons/return.svg",
+    title: "Easy Returns",
+    subtitle: "Easy returns & exchanges within 90 days of your purchase.",
+  },
+];
