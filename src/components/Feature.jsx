@@ -8,7 +8,7 @@ const Features = () => {
           {Icons.map((icon, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center w-[450px] text-center gap-3"
+              className="flex flex-col justify-center items-center w-[300px] text-center gap-3"
             >
               <div>{icon.icon}</div>
               <h3 className="font-bold">{icon.title}</h3>
