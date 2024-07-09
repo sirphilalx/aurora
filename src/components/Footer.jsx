@@ -233,7 +233,9 @@ const Footer = () => {
                 </svg>
               </div>
               <div className="flex gap-4 text-sm sm:text-base">
-                <p>Copyright</p>
+                <p>
+                  Copyright <span>&copy;</span>
+                </p>
                 <p>{currentYear}</p>
               </div>
             </div>
