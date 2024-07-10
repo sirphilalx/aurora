@@ -31,7 +31,7 @@ const CheckoutPage = () => {
       {cart.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        <div className="space-y-4 sm:flex gap-4">
+        <div className="space-y-4 sm:flex justify-between">
           <div className="formCheckout text-center">
             <div className="text-center">Express Chechout Form</div>
             <div className="flex gap-2 mt-2">
@@ -262,7 +262,7 @@ const CheckoutPage = () => {
               </span>
             </div>
             <div className="p-4">
-              <h1>Payment Method</h1>
+              <h1 className="py-4">Payment Method</h1>
               <form>
                 <div className="">
                   <label className="inline-flex items-center">
@@ -298,7 +298,7 @@ const CheckoutPage = () => {
                   </label>
                 </div>
 
-                <div className="debitCards mt-4">
+                <div className="debitCards mt-8">
                   <svg
                     width="280"
                     height="32"
@@ -473,7 +473,7 @@ const CheckoutPage = () => {
                 </div>
                 <button
                   type="submit"
-                  className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-4 w-[320px] sm:w-[376px]"
+                  className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-8 w-[320px] sm:w-[376px]"
                 >
                   Place Order
                 </button>
