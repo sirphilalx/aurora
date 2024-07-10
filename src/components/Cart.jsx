@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../CartContext";
 
 const Cart = () => {
@@ -18,6 +18,11 @@ const Cart = () => {
         maximumFractionDigits: 0,
       })
     );
+  };
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    navigate("/checkout", { state: { cart } });
   };
 
   return (
@@ -116,7 +121,10 @@ const Cart = () => {
             </p>
           </div>
           <div className="flex justify-end w-full ">
-            <div className="bg-custom-blue h-[70px] w-full max-w-[546px] flex justify-center items-center text-white text-[24px]">
+            <div
+              className="bg-custom-blue h-[70px] w-full max-w-[546px] flex justify-center items-center text-white text-[24px]"
+              onClick={handleCheckout}
+            >
               Checkout
             </div>
           </div>
