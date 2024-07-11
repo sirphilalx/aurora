@@ -5,7 +5,7 @@ const CheckoutPage = () => {
   const location = useLocation();
   const cart = location.state?.cart || [];
 
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handlePlaceOrder = () => {
     // Perform your checkout logic here (e.g., API call)
