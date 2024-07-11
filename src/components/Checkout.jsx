@@ -1,8 +1,21 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const CheckoutPage = () => {
   const location = useLocation();
   const cart = location.state?.cart || [];
+
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  const handlePlaceOrder = () => {
+    // Perform your checkout logic here (e.g., API call)
+    // On successful checkout, show the modal
+    setIsModalOpen(true);
+  };
+
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   const calculateTotal = () => {
     return cart.reduce((sum, item) => {
@@ -471,9 +484,29 @@ const CheckoutPage = () => {
                     </defs>
                   </svg>
                 </div>
-                <button className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-8 w-[320px] sm:w-[376px]">
+                <button
+                  className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-8 w-[320px] sm:w-[376px]"
+                  onClick={handlePlaceOrder}
+                >
                   Place Order
                 </button>
+                {/* Checkout Successful Modal */}
+                {isModalOpen && (
+                  <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+                    <div className="bg-white p-6 rounded-2xl shadow-lg">
+                      <h2 className="text-2xl font-bold mb-4">
+                        Checkout Successful
+                      </h2>
+                      <p>Your order has been placed successfully.</p>
+                      <button
+                        className="mt-4 px-4 py-2 bg-custom-blue text-white rounded-2xl"
+                        // onClick={closeModal}
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                )}
               </form>
             </div>
           </div>
