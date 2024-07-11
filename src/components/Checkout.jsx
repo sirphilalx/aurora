@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const CheckoutPage = () => {
   const location = useLocation();
   const cart = location.state?.cart || [];
+  const navigate = useNavigate();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -500,7 +501,7 @@ const CheckoutPage = () => {
                       <p>Your order has been placed successfully.</p>
                       <button
                         className="mt-4 px-4 py-2 bg-custom-blue text-white rounded-2xl"
-                        // onClick={closeModal}
+                        onClick={() => navigate("/")}
                       >
                         Close
                       </button>
