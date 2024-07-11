@@ -471,10 +471,7 @@ const CheckoutPage = () => {
                     </defs>
                   </svg>
                 </div>
-                <button
-                  type="submit"
-                  className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-8 w-[320px] sm:w-[376px]"
-                >
+                <button className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-8 w-[320px] sm:w-[376px]">
                   Place Order
                 </button>
               </form>
