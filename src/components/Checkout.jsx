@@ -501,7 +501,7 @@ const CheckoutPage = () => {
                       <p>Your order has been placed successfully.</p>
                       <button
                         className="mt-4 px-4 py-2 bg-custom-blue text-white rounded-2xl"
-                        onClick={() => navigate("/")}
+                        onClick={() => navigate(`/product/${item.id}`)}
                       >
                         Close
                       </button>
