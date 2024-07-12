@@ -128,6 +128,20 @@ const Cart = () => {
               Checkout
             </div>
           </div>
+          <div className="flex justify-end w-full ">
+            <div className="bg-gray-100 border p-[20px] border-gray-900 h-[70px] w-full max-w-[546px] flex justify-center items-center text-white text-[24px]">
+              <div className=" w-full flex flex-row justify-center items-center">
+                <input
+                  type="text"
+                  placeholder="Enter Code"
+                  className="w-[345px] h-[45px] px-[24px] py-[14px] font-montserrat text-[16px] text-blue-200"
+                />
+                <button className="bg-custom-blue w-[146.41px] h-[45px] text-[16px] font-semibold">
+                  Apply Coupon
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>

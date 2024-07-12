@@ -68,8 +68,8 @@ const ProductDetail = () => {
   const items = YouMayLike;
 
   return (
-    <div className="flex flex-col">
-      <div className="sm:flex p-5 mt-10 gap-4 justify-center ">
+    <div className="flex flex-col justify-center items-center">
+      <div className="sm:flex sm:w-[1252px] p-5 mt-10 gap-4  items-center justify-center">
         <div className="left">
           <div className="images">
             <div className="masterImage">
@@ -78,7 +78,7 @@ const ProductDetail = () => {
                 alt={product.title}
                 className="w-[377px] h-[378px] sm:w-[772px] sm:h-[773px] object-cover"
               />
-              <div className="smallImages flex w-full justify-between mt-3">
+              <div className="smallImages flex w-full justify-between mt-3 gap-4">
                 <img
                   src={product.imgUrl}
                   alt={product.title}
@@ -106,7 +106,7 @@ const ProductDetail = () => {
         </div>
         <div className="right mt-6 sm:mt-0">
           <div className="flex gap-4 sm:flex-col">
-            <div className="logo border p-3 w-[98px] h-[30px] sm:w-[173px] sm:h-[53px] flex items-center ">
+            <div className="logo  p-3 w-[98px] h-[30px] sm:w-[173px] sm:h-[53px] flex items-center ">
               <svg
                 viewBox="0 0 173 53"
                 fill="none"
