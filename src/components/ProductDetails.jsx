@@ -69,7 +69,7 @@ const ProductDetail = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="sm:flex sm:w-[1252px] p-5 mt-10 gap-4  items-center justify-center">
+      <div className="sm:flex sm:w-[1252px] p-5 mt-10 gap-4   justify-center">
         <div className="left">
           <div className="images">
             <div className="masterImage">

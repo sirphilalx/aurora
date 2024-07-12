@@ -134,9 +134,9 @@ const Cart = () => {
                 <input
                   type="text"
                   placeholder="Enter Code"
-                  className="w-[345px] h-[45px] px-[24px] py-[14px] font-montserrat text-[16px] text-blue-200"
+                  className="w-[345px] h-[45px] px-[24px] py-[14px] font-montserrat text-[16px] placeholder:text-blue-200"
                 />
-                <button className="bg-custom-blue w-[146.41px] h-[45px] text-[16px] font-semibold">
+                <button className="bg-custom-blue w-[146.41px] h-[45px] text-[9px] sm:text-[16px] font-semibold">
                   Apply Coupon
                 </button>
               </div>
