@@ -8,7 +8,8 @@ const CheckoutPage = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handlePlaceOrder = () => {
+  const handlePlaceOrder = (event) => {
+    event.preventDefault(); // Prevent form submission
     // Perform your checkout logic here (e.g., API call)
     // On successful checkout, show the modal
     setIsModalOpen(true);
@@ -485,12 +486,14 @@ const CheckoutPage = () => {
                     </defs>
                   </svg>
                 </div>
-                <button
-                  className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-8 w-[320px] sm:w-[376px]"
-                  onClick={handlePlaceOrder}
-                >
-                  Place Order
-                </button>
+                <form>
+                  <button
+                    className="bg-custom-blue text-white px-4 py-2 rounded-2xl mt-8 w-[320px] sm:w-[376px]"
+                    onClick={handlePlaceOrder}
+                  >
+                    Place Order
+                  </button>
+                </form>
                 {/* Checkout Successful Modal */}
                 {isModalOpen && (
                   <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
@@ -501,7 +504,7 @@ const CheckoutPage = () => {
                       <p>Your order has been placed successfully.</p>
                       <button
                         className="mt-4 px-4 py-2 bg-custom-blue text-white rounded-2xl"
-                        onClick={() => navigate(`/product/${item.id}`)}
+                        onClick={() => navigate("/")}
                       >
                         Close
                       </button>
